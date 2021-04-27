@@ -14,14 +14,15 @@ form
 
 .project 
 {
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.project h2
+.projectHeader h2
 {
     margin-top: -10px; 
     font-size: 75px; 
     color: #c1cfe6;
+    width: 100%;
 }
 
 li

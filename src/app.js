@@ -23,7 +23,10 @@ app.get('', (req, res) => {
     res.render('index', {qs: req.query});
 })
 
+
+// takes the form and passes the requests body
 app.post('', urlEncodedParser, (req, res) => {
+    
     res.render('name-success', {data: req.body});
     data = req.body; 
     insertName(data.first, data.last);

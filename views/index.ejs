@@ -41,16 +41,41 @@
             <input type= "submit" value="submit"> -->
 
 
-            <div class="project">
+            <div class="projectHeader">
                 <h2>Project Request</h2>
+            </div>
+
+
+            <div class="project">
+
+                <li>    
+                    <label for="projectName">Name:</label>
+                    <input type="text" name="projectName" placeholder="Please enter the name of your Organization.">
+                </li>
+                <li>
+                    <label for="duration">Duration of Problem:</label>
+                    <input type="number" min ="0" name="estimatedLength" placeholder="How long has this problem been occuring? (in months).">
+                </li>
+                <li>
+                    <label for="estimatedCost">Estimated Cost:</label>
+                    <input type="number" min="0" name="estimatedCost" placeholder="Estimated cost of project in USD($)."> 
+                </li>
+                <li>
+                    <label for="projectDescription">Description:</label>
+                </li>
+                    <textarea rows=5 cols=60 name="projectDescription" placeholder="Please provide an in depth description of your project."></textarea>
+
+            </div>
+
+            <div class="project">
 
                 <li>
                     <label for="projectName">Name:</label>
-                    <input type="text" name="projectName" placeholder="Please enter the name of your project.">
+                    <input type="text" name="projectName" placeholder="Please enter the name of your Organization.">
                 </li>
                 <li>
-                    <label for="estimatedLength">Estimated Length:</label>
-                    <input type="number" min ="0" name="estimatedLength" placeholder="How long the project will take (in months).">
+                    <label for="duration">Duration of Problem:</label>
+                    <input type="number" min ="0" name="estimatedLength" placeholder="How long has this problem been occuring? (in months).">
                 </li>
                 <li>
                     <label for="estimatedCost">Estimated Cost:</label>

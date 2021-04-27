@@ -33,7 +33,12 @@ app.get('/', function(req, resp) {
     });
 })
 
-const insertProject = (name, description, estlen, estcost, category, status, user) => {
+
+// takes in params from form and sets value in SQL query / inserts
+const insertProject = (name, description, duration, email, consequences, attempts, magicWand) => {
+
+    //create function to find ID
+
     connection.query("INSERT INTO PROJECTS VALUES (" + "'" + first + "'" + ', ' + "'" + last + "'" + ');', function(error, rows, fields){
         if(error)
             console.log(error);
@@ -42,6 +47,6 @@ const insertProject = (name, description, estlen, estcost, category, status, use
     })
 }
 
-module.exports = insertName; 
+module.exports = insertProject; 
 
 // app.listen(1337); 
