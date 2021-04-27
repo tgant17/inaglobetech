@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <!-- <p><%= qs.dept %> </p> -->
+
+    <header>
+
+        <div class="links">
+            <a class="pic" href=https://www.inaglobe.com><img src ="/img/logo.png"></a>
+            
+            <div class="linksR">
+                    <a class="home" href= https://www.inaglobe.com/>HOME</a>
+                    <a href= https://www.inaglobe.com/abouttab>ABOUT</a>
+                    <a href= https://www.inaglobe.com/projects>PROJECTS</a>
+                    <a href= https://www.inaglobe.com/careers-1>CAREERS</a>
+                    <a href= https://www.inaglobe.com/contact>CONTACT</a>
+            </div>
+
+        </div>
+    </header>
+
+    <body>
+
+        <div class="info">
+
+            <h1>Project Request Form</h1>
+            <p>Thank you for submitting a Project Request.<br> Please provide us with some information about your project.</p>
+        </div>
+
+        <form id = "inaglobe" method=POST action="">
+
+            <!-- <label for="first">First Name</label>
+            <input type="text" name="first">
+            <label for="Last">Last Name</label>
+            <input type="text" name="last">
+
+            <input type= "submit" value="submit"> -->
+
+
+            <div class="project">
+                <h2>Project Request</h2>
+
+                <li>
+                    <label for="projectName">Name:</label>
+                    <input type="text" name="projectName" placeholder="Please enter the name of your project.">
+                </li>
+                <li>
+                    <label for="estimatedLength">Estimated Length:</label>
+                    <input type="number" min ="0" name="estimatedLength" placeholder="How long the project will take (in months).">
+                </li>
+                <li>
+                    <label for="estimatedCost">Estimated Cost:</label>
+                    <input type="number" min="0" name="estimatedCost" placeholder="Estimated cost of project in USD($)."> 
+                </li>
+                <li>
+                    <label for="projectDescription">Description:</label>
+                </li>
+                    <textarea rows=5 cols=60 name="projectDescription" placeholder="Please provide an in depth description of your project."></textarea>
+
+            </div>
+
+        </form>
+
+    </body>
+</html>
