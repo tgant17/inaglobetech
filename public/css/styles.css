@@ -25,6 +25,16 @@ form
     width: 100%;
 }
 
+.sub
+{
+    width: 200px; 
+    height:80px; 
+    border-radius: 25px; 
+    padding: 15px 32px; 
+    margin-left: 125px;
+    /* padding: 20px;  */
+}
+
 li
 {
     list-style-type: none;
@@ -90,5 +100,52 @@ header a
 {
     font-size: 52px; 
     color: #2E325C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table 
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td 
+{
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.homepage
+{
+    margin-top: 200px; 
+    margin-left: 400px; 
+}
+
+.homepage a
+{
+    padding: 20px; 
+    text-decoration: none;
+    color: #2E325C;
+    font-size: 27px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <h1>List of Projects</h1>
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td>Project Name</td>
+                <td>Description</td>
+                <td>Consequences</td>
+                <td>Duration of problem</td>
+                <td>Contact Info</td>
+
+            </tr>
+            <% for(var i=0; i < row.length; i++) { %>
+                <tr>
+                    <td><%= row[i].NAME %></td>
+                    <td><%= row[i].DESCRIPTION %></td>
+                    <td><%= row[i].CONSEQUENCES %></td>
+                    <td><%= row[i].DURATIONOFPROBLEM %> Month(s)</td>
+                    <td><%= row[i].EMAIL %></td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+
+
+</html>

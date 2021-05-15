@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+
+    <header>
+
+        <div class="links">
+            <a class="pic" href=https://www.inaglobe.com><img src ="/img/logo.png"></a>
+            
+            <div class="linksR">
+                    <a class="home" href= https://www.inaglobe.com/>HOME</a>
+                    <a href= https://www.inaglobe.com/abouttab>ABOUT</a>
+                    <a href= https://www.inaglobe.com/projects>PROJECTS</a>
+                    <a href= https://www.inaglobe.com/careers-1>CAREERS</a>
+                    <a href= https://www.inaglobe.com/contact>CONTACT</a>
+            </div>
+
+        </div>
+    </header>
+
+    <body>
+
+        <div class="info">
+
+            <h1>Project Request Form</h1>
+            <p>Thank you for submitting a Project Request.<br> Please provide us with some information about your project.</p>
+        </div>
+
+        <form id = "inaglobe" method=POST action="">
+
+            <!-- <label for="first">First Name</label>
+            <input type="text" name="first">
+            <label for="Last">Last Name</label>
+            <input type="text" name="last">
+
+            <input type= "submit" value="submit"> -->
+
+
+            <div class="projectHeader">
+                <h2>Project Request</h2>
+            </div>
+
+
+            <div class="project">
+
+                <li>    
+                    <label for="projectName">Name:</label>
+                    <input type="text" name="projectName" placeholder="Please enter the name of your Project.">
+                </li>
+                <li>
+                    <label for="duration">Duration of Problem:</label>
+                    <input type="number" min ="0" name="duration" placeholder="How long has this problem been occuring? (in months).">
+                </li>
+                <li>
+                    <label for="description">Description:</label>
+                </li>
+                    <textarea rows=5 cols=60 name="description" placeholder="Please provide an in depth description of your project."></textarea>
+                <li>
+                    <label for="attempts">Attempts:</label>
+                </li>
+                <textarea rows=5 cols=60 name="attempts" placeholder="Please describe any attempts you made at solving this problem."></textarea>
+            
+            </div>
+
+
+            <div class="project">
+
+                <li>
+                    <label for="magicWand">Dream Solution:</label>
+                </li>
+                <textarea rows=5 cols=60 name="magicWand" placeholder="If you had a magic wand, how would you solve this problem?"></textarea>
+                
+                <li>
+                    <label for="consequences">Consequences:</label>
+                </li>
+                <textarea rows=5 cols=60 name="consequences" placeholder="What consequences is this problem causing?"></textarea>
+        
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Please provide your email, so we may contact you for further info.">
+                </li>
+
+                 <input class="sub" type= "submit" value="submit">
+
+            </div>
+
+        </form>
+
+    </body>
+</html>
